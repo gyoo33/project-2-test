@@ -30,6 +30,7 @@ $(window).scroll(function() {
 // MODAL
 $(document).ready(function(){
   $('.modal').modal();
+  $('.modal').modal('open');
 });
 
 // DROPDOWNS

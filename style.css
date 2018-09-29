@@ -1,18 +1,18 @@
-// OFFSET FOR LOWER NAVBAR
+/* // OFFSET FOR LOWER NAVBAR */
 .navbar-fixed {
   top:-64px;
 }
 
 
-// NAVBAR TWEAK
-// Prevents content jump when navbar becomes fixed
+/* // NAVBAR TWEAK
+// Prevents content jump when navbar becomes fixed */
 .navbar-lower {
   @media only screen and (max-width: 600px) {height:49px;} // SMALL
   @media only screen and (min-width: 600px) and (max-width: 992px) {max-height:29px;} // MEDIUM
   @media only screen and (min-width: 993px) {height:112px;} // LARGE
 }
 
-// ADD SHADOW TO LOWER NAVBAR
+/* // ADD SHADOW TO LOWER NAVBAR */
 .navbar-lower nav {
   // Not working. Hmmm.
   box-shadow: 
@@ -22,15 +22,15 @@
 }
 
 
-// FIX NAVBAR TAB HEIGHT ISSUE AFTER SCROLL
+/* // FIX NAVBAR TAB HEIGHT ISSUE AFTER SCROLL */
 .nav-extended {
   @media only screen and (max-width: 600px) {max-height:48px;} // SMALL
   @media only screen and (min-width: 600px) and (max-width: 992px) {max-height:48px;} // MEDIUM
   @media only screen and (min-width: 993px) {max-height:112px;} // LARGE
 }
 
-// FIX SIDEBAR'S OVERLAY ISSUE
-// Not working. Hmmm.
+/* // FIX SIDEBAR'S OVERLAY ISSUE
+// Not working. Hmmm. */
 .side-nav {
   z-index:999;
 }
@@ -42,7 +42,7 @@
 }
 
 
-// SMALL LOGO
+/* // SMALL LOGO */
 nav .fadeInLogo {
   font-size: 2.5rem;
   font-weight: 900;
@@ -52,7 +52,7 @@ nav .fadeInLogo {
   display: none;
 }
 
-// RESTYLE MATERIALIZE SEARCH INPUT
+/* // RESTYLE MATERIALIZE SEARCH INPUT */
 nav .input-field input[type=search] {
   width:0px;
 }
@@ -62,12 +62,12 @@ nav .input-field input[type=search]:focus {
   text-shadow: 0 0 0 rgba(0, 0, 0, 0.87); // Remove blinking cursor 2/2
 }
 
-//CUSTOM ROW STYLE WITH NO CLEAR AFTER
+/* //CUSTOM ROW STYLE WITH NO CLEAR AFTER */
 .row-noclear:after {
   clear:none!important;
 }
 
-// CUSTOM NAVBAR DROPDOWN SIZES
+/* // CUSTOM NAVBAR DROPDOWN SIZES */
 ul#dropdown1.dropdown-content {width:400px!important;}
 ul#dropdown1.dropdown-content:active {width:400px!important;}
 
@@ -77,11 +77,11 @@ ul#dropdown1.dropdown-content:active {width:400px!important;}
   
 }
 
-// FIX SIDENAV SPACING
+/* // FIX SIDENAV SPACING */
 .side-nav li>a {
   padding: 0 16px;
 }
-//FIX SIDEBAR DIVIDERS
+/* //FIX SIDEBAR DIVIDERS */
 .side-nav .divider {
   margin:0;
   height:8px;
@@ -89,7 +89,7 @@ ul#dropdown1.dropdown-content:active {width:400px!important;}
   background-color: transparent;
 }
 
-// SIDENAV HEADER
+/* // SIDENAV HEADER */
 .sidenav-header {
 background: url("../images/user-bg.jpg") no-repeat center center;
 background-size: cover;
@@ -122,13 +122,13 @@ padding: 0;
 
 
 
-//CUSTOM NAVBAR FOR BREADCRUMBS
+/* //CUSTOM NAVBAR FOR BREADCRUMBS */
 .nav-transparent {
   background-color: transparent;
   box-shadow: none;
 }
 
-// DARK
+/* // DARK */
 .nav-breadcrumbs-dark {
   .breadcrumb {
     color: rgba(0,0,0,0.5);

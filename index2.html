@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
-    <script type="text/javascript" src="effects.js"></script>
+    
     <link type="text/css" rel="stylesheet" href="style.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <!-- <script src="main.js"></script> -->
 </head>
@@ -37,7 +38,8 @@
                 <form style="height:64px;">
                   <div class="input-field ">
                     <input id="search" type="search" required placeholder="Search">
-                    <label class="label-icon" for="search"><i class="this material-icons">search</i></label>
+                    <label class="label-icon" for="search"><i class="this material-icons">Wiki search</i></label>
+                    <button class="fa fa-search" id="search-button" onclick="goSearch()"></button>
   <!--                   <i class="material-icons" style="">close</i> -->
                   </div>
                 </form>
@@ -64,16 +66,16 @@
       <div class="nav-wrapper">
         <div class="row">
           <div class="col s12">
-            <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
-            <a class="fadeInLogo brand-logo animated slideInUp">
+            <!-- <a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+            <a class="fadeInLogo brand-logo animated slideInUp"> -->
               <!-- M -->
               <!-- <img src="https://materializecss.com/res/materialize.svg" alt="" style="margin-top:12px;" height="40px"/> -->
-              <i class="large material-icons">important_devices</i>
-            </a>
+              <!-- <i class="large material-icons">important_devices</i>
+            </a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#modal1">Sign Up</a></li>
               <li class="active"><a href="#modal1">About</a></li>
-              <li><a href="#modal1"><Login></Login></a></li>
+              <li><a href="#modal1">Login</a></li>
               <li><a href="#modal1">Trending Videos</a></li>
               
               <li><a href="#!" class="dropdown-button" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -87,7 +89,9 @@
                 <li class="tab"><a href="#tab3">Third one</a></li>
                 <li class="tab"><a href="#tab4">Fourth tab</a></li>
               </ul>
-              <ul class="side-nav grey darken-2" id="mobile-demo">
+              </div>
+              </div>
+              <!-- <ul class="side-nav grey darken-2" id="mobile-demo">
           
           
                 <li class="sidenav-header red lighten-2">
@@ -200,22 +204,33 @@
               </ul>
             </div>
           </div>
-        </div>
-  
+        </div> -->
+        <!-- <script type="text/javascript">
+        // AFFIX LOWER NAVBAR ON SCROLL
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+    if (scroll >= 64) {
+        $(".navbar-lower").addClass("navbar-fixed");
+    }
+    else {
+        $(".navbar-lower").removeClass("navbar-fixed");     
+    }
+});</script> -->
         
         <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
+        <!-- <ul id="dropdown1" class="dropdown-content">
           <li><a href="#!">A really long item here</a></li>
           <li><a href="#!">two</a></li>
-          <!-- <li class="divider"></li> -->
+          <li class="divider"></li>
           <li><a href="#!">grade</i>three</a></li>
         </ul>
         
         
         <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal hide-on-med-and-down scale-transition scale-out pulse" href="#modal1">
             <i class="material-icons">call</i>
-        </a>
+        </a> -->
   
+      </div>
       </div>
     </nav>
   </div>
@@ -613,6 +628,7 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="effects.js"></script>
 </body>
-  
+</html>
   
