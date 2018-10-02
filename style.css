@@ -11,7 +11,10 @@
   @media only screen and (min-width: 600px) and (max-width: 992px) {max-height:29px;} // MEDIUM
   @media only screen and (min-width: 993px) {height:112px;} // LARGE
 }
-
+.gif{
+  width:500px;
+  height:162px;}
+	
 /* // ADD SHADOW TO LOWER NAVBAR */
 .navbar-lower nav {
   // Not working. Hmmm.
