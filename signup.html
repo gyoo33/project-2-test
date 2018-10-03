@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project 2</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="style.css"> -->
+    <link type="text/css" rel="stylesheet" href="styleSignIn.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+
+    <div class="navbar-upper">
+        <nav class="z-depth-0">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#modal1" class="brand-logo" style="display:block;float:left;">Intellegent Man</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                            <li>
+
+                                <form style="height:64px;">
+                                    <div class="input-field ">
+                                        <input id="search" type="search" required placeholder="Search">
+                                        <label class="label-icon" for="search"><i class="this material-icons">Wiki
+                                                search</i></label>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <div class="navbar-lower">
+        <nav class="z-depth-0 nav-extended">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li class="active"><a href="#modal1">Sign In</a></li>
+                            <li><a href="index2.html">About</a></li>
+                            <li><a href="#modal1">Trending Videos</a></li>
+
+                            <li><a href="#!" class="dropdown-button" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="nav-content ">
+                        <div class="col s12 nav-content red lighten-3">
+                            <ul class="tabs tabs-transparent ">
+                                <li class="tab"><a href="#tab1" class="active">Navbar tab</a></li>
+                                <li class="tab"><a href="#tab2">Another</a></li>
+                                <li class="tab"><a href="#tab3">Third one</a></li>
+                                <li class="tab"><a href="#tab4">Fourth tab</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- SIGN IN PAGE -->
+    <div class="container white z-depth-2">
+        <ul class="tabs teal">
+            <li class="tab col s3"><a class="white-text active" href="#login">login</a></li>
+            <li class="tab col s3"><a class="white-text" href="#register">register</a></li>
+        </ul>
+        <div id="login" class="col s12">
+            <form class="col s12">
+                <div class="form-container">
+                    <h3 class="teal-text">Hello</h3>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <button class="btn waves-effect waves-light teal" type="submit" name="action">Connect</button>
+                        <br>
+                        <br>
+                        <a href="">Forgotten password?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="register" class="col s12">
+            <form class="col s12">
+                <div class="form-container">
+                    <h3 class="teal-text">Welcome</h3>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email-confirm" type="email" class="validate">
+                            <label for="email-confirm">Email Confirmation</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password-confirm" type="password" class="validate">
+                            <label for="password-confirm">Password Confirmation</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // This "document.ready" code isn't necessary in this example... but is useful to become familiar with.
+        // "document.ready" makes sure that our JavaScript doesn't get run until the HTML document is finished loading.
+        $(document).ready(function () {
+
+            // Here we use jQuery to select the header with "click-me" as its ID.
+            // Notice I have the #click-me, click, and then the function
+            // So $("id|class|element").on("action", function(){});
+            // And so whenever it is clicked...
+            $(document).ready(function () {
+                $('.tabs').tabs();
+            });
+
+        });
+
+    </script>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+</body>
+
+</html>
